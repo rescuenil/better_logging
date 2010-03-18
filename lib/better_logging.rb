@@ -35,6 +35,8 @@ module PaulDowman
                   severity_name = "\033[33m" + severity_name + "\033[0m"
                 elsif severity == ERROR || severity == FATAL
                   severity_name = "\033[31m" + severity_name + "\033[0m"
+                elsif severity == DEBUG
+                  severity_name = "\033[36m" + severity_name + "\033[0m"
                 end
               end
               return severity_name
